@@ -1,4 +1,4 @@
-class DogWalkers < ActiveRecord::Migration[5.2]
+class CreateDogWalkers < ActiveRecord::Migration[5.2]
   def change
     create_table :dog_walkers do |t|
       t.string :name 
@@ -7,4 +7,4 @@ class DogWalkers < ActiveRecord::Migration[5.2]
       t.timestamps # created_at, updated_at  
     end
   end
-end # end of DogWalkers class
+end # end of CreateDogWalkers class

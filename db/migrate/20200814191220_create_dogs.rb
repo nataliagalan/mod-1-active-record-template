@@ -1,4 +1,4 @@
-class Dogs < ActiveRecord::Migration[5.2]
+class CreateDogs < ActiveRecord::Migration[5.2]
   def change
     create_table :dogs do |t|
       t.string :name
@@ -10,5 +10,5 @@ class Dogs < ActiveRecord::Migration[5.2]
 
   end
 
-end #end of Dogs class
+end #end of CreateDogs class
 

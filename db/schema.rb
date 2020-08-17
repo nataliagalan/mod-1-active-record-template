@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_14_192428) do
+ActiveRecord::Schema.define(version: 2020_08_17_031119) do
 
   create_table "dog_walkers", force: :cascade do |t|
     t.string "name"
@@ -29,8 +29,8 @@ ActiveRecord::Schema.define(version: 2020_08_14_192428) do
 
   create_table "walks", force: :cascade do |t|
     t.integer "length_in_minutes"
-    t.integer "dogs_id"
-    t.integer "dog_walkers_id"
+    t.integer "dog_id"
+    t.integer "dog_walker_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
